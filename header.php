@@ -29,7 +29,7 @@
             <div class="content">
                 <h1 id="site_title">
                     <a href="#">
-                        <img src="http://www.tutorialwebdesign.com.br/tema-wordpress-tutorial/img/logo.png" alt="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
+                        <img src="http://pixabay.com/static/uploads/photo/2011/08/14/18/11/ubuntu-logo-8647_640.png" alt="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
                     </a>
                 </h1>
             </div>

@@ -34,6 +34,12 @@ a {
 
 }
 
+#logomarca img {
+    width: 375px;
+    height: 90px;
+    margin-left: 35%;
+}
+
 /*LAYOUT PRINCIPAL - INDEX*/
 
 .imagem_destacada img{
@@ -90,7 +96,6 @@ img {
 display: none;
 }
 
-/* SIDEBAR */
 #sidebar {
     float: right;
     width: 33%;

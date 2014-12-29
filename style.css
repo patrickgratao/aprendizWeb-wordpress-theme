@@ -157,7 +157,7 @@ aside {
 
 /*FOOTER*/
 
-footer{
+#copyright {
     margin-top: 20px;
     background-color: #111;
     color: #fff;
@@ -168,6 +168,15 @@ footer{
 #copyright a:hover {
     color: #07C7DD;
 }
+
+#dados_developer {
+    margin-right: 50px;
+}
+
+#copyright a {
+    color: #83e3ee;
+}
+
 
 /*Single Page*/
 
@@ -189,6 +198,10 @@ div.single {
 #autor h4{
     margin-bottom: 10px;
     text-transform: capitalize;
+}
+
+#autor img {
+    border-radius: 100%;
 }
 
 #autor span {
@@ -319,6 +332,12 @@ p label {
 /*A classe dados_do_post estiliza a author, categoria e comentarios*/
 .dados_do_post {
     font-weight: 900;
+
+}
+
+#crumbs {
+       width: 900px;
+        margin: 40px auto;
 
 }
 

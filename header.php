@@ -30,7 +30,7 @@
             <div class="content">
                 <h1 id="site_title">
                     <a href="/">
-                        <img src="" alt="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
+                        <img src=" " alt="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
                     </a>
                 </h1>
             </div>
@@ -38,6 +38,8 @@
             <nav role="navigation" id="menu_principal">
                 <?php wp_nav_menu( $args ); ?>
             </nav>
+
+            <?php wp_custom_breadcrumbs(); ?> <!-- Breadcrumb -->
         </header>
     </div>
 

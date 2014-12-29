@@ -14,6 +14,7 @@
     </a>
     <div class="resumo">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+         <p class="dados_do_post">&copy Publicado por <span><?php the_author_link(); ?> </span> em <?php the_time('j \d\e F \d\e Y') ?><span class="pull-right">//  <?php comments_number('0', '1', '%' );?> Comentários</span></p>
         <p><?php the_excerpt(); ?></p>
         <a href="<?php the_permalink(); ?>">Continue lendo >></a>
     </div>

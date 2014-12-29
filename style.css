@@ -37,7 +37,6 @@ a {
 #logomarca img {
     width: 375px;
     height: 90px;
-    margin-left: 35%;
 }
 
 /*LAYOUT PRINCIPAL - INDEX*/
@@ -134,7 +133,16 @@ footer{
     padding: 1em 0px;
 }
 
+#copyright a:hover {
+    color: #07C7DD;
+}
+
 /*Single Page*/
+
+div.single {
+    max-width: 640px;
+}
+
 .single h1 {
     font-family: "AvenirLTStd-Black","trebuchet ms",helvetica,arial,sans-serif !important;
     color: #2D2968;
@@ -172,4 +180,95 @@ footer{
 #pagina_simples p {
      margin-top: 20px;
     font-size: 20px;
+}
+
+/*COMENTARIOS */
+
+#commentform {
+    max-width: 700px;
+}
+
+.label_box{
+    width: 700px;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+#author, #email, #url {
+    padding: 5px;
+    width: 500px;
+}
+
+#comments li {
+list-style: none;
+}
+
+.fn {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+#comments header {
+background: #eee;
+border: 1px solid #ddd;
+padding: 10px 16px;
+}
+#comments header p {
+position: relative;
+top: 5px;
+float: right;
+margin: 0;
+}
+#comments header h3 {
+font-size: 20px;
+margin: 0;
+}
+
+.comment-body {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: table;
+    margin-bottom: 12px;
+    padding: 13px;
+    width: 100%;
+}
+.avatar-autor {
+    float: left;
+    margin-right: 16px;
+}
+.comment-meta.commentmetadata {
+    background: none repeat scroll 0 0 #eee;
+    margin-bottom: 6px;
+    padding: 5px;
+}
+
+p label {
+    margin-top: 20px;
+}
+
+
+/* PAGINACAO COMENTARIOS */
+
+#comments .navigation {
+    margin: 16px 0;
+    padding: 8px 0 8px;
+    text-align: right;
+}
+#comments .page-numbers.current {
+    background: none repeat scroll 0 0 #aaa;
+    border:1px solid #999999;
+    color: #fff;
+}
+#comments .page-numbers {
+    background: none repeat scroll 0 0 #eee;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+/*Classes e IDs de teste*/
+
+.resumo_do_artigo {
+    font-size: 18px;
 }

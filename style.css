@@ -1,0 +1,170 @@
+/*
+Theme Name: Blog Aprendiz Web
+Theme URI: http://www.aprendizweb.com.br
+Description: Tema desenvolvido para o blog Aprendiz Web
+Author: Patryck Gratão
+Author URI: http://www.patryck.com.br
+*/
+
+@import url('css/bootstrap.min.css');
+@import url('css/font-awesome.min.css');
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+
+body {
+    line-height: 1.6em;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#conteudo {
+    width: 720px;
+    margin: 0 auto;
+
+}
+
+/*LAYOUT PRINCIPAL - INDEX*/
+
+.imagem_destacada img{
+    width: 640px;
+    height: 300px;
+    border-radius: 7px;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 640px;
+}
+
+.blog-artigo{
+    margin-bottom: 15px;
+    width: 640px;
+}
+
+.blog-artigo h2 {
+    font-size: 2.6em;
+}
+
+.nome_autor {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.resumo h2 a {
+    color: #2D2968;
+    padding: 10px 0px 0px;
+}
+
+.resumo h2 a:hover {
+    color: green ;
+}
+
+
+/*MENU PRINCIPAL*/
+
+#menu_principal li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#menu_principal ul {
+        text-align: center;
+}
+
+/*SIDEBAR*/
+
+/*Exclui o texto pesquisar por:*/
+#sidebar #searchform label {
+display: none;
+}
+
+/* SIDEBAR */
+#sidebar {
+    float: right;
+    width: 33%;
+}
+#sidebar .widget {
+    margin-bottom: 30px;
+}
+#sidebar .widget h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#sidebar .widget ul {
+    padding-left: 20px;
+}
+#sidebar .widget li {
+    padding: 5px 5px 5px 0;
+    border-bottom: 1px dashed #ccc;
+    list-style: disc;
+}
+#sidebar .widget.newsletter {
+    padding: 11px;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    margin-top: 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0px;
+}
+
+/*Single Page*/
+.single h1 {
+    font-family: "AvenirLTStd-Black","trebuchet ms",helvetica,arial,sans-serif !important;
+    color: #2D2968;
+}
+
+#conteudo_post {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*Autor*/
+#autor h4{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#autor span {
+    color: #cc2222;
+}
+
+/*EFEITO SELECTION*/
+
+::-moz-selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+
+#pagina_simples p {
+     margin-top: 20px;
+    font-size: 20px;
+}

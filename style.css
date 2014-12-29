@@ -9,19 +9,40 @@ Author URI: http://www.patryck.com.br
 @import url('css/bootstrap.min.css');
 @import url('css/font-awesome.min.css');
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-
 
 body {
     line-height: 1.6em;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+   font-family: "Cantarell", serif, Helvetica;
     background-color: #f4f4f4;
+}
+h1, h2, h3, h4 {
+    font-family: "Fjalla One", Helvetica, Arial;
+    font-weight: normal;
+    color: #2D2968;
+}
+h1 {
+    font-size: 40px;
+    margin: 30px 0 30px;
+}
+h2 {
+    font-size: 38px;
+    margin: 30px 0 15px;
+
+}
+h3 {
+    font-size: 32px;
+    margin: 20px 0 15px;
+}
+h4 {
+    font-size: 23px;
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 20px 0 15px;
 }
 
 a {
@@ -31,12 +52,22 @@ a {
 #conteudo {
     width: 720px;
     margin: 0 auto;
+}
+
+#conteudo_com_sidebar {
+    width: 1000px;
+    margin: 0 auto;
 
 }
 
 #logomarca img {
     width: 375px;
     height: 90px;
+}
+
+#logomarca h1 {
+    padding: 10px;
+    margin: 0;
 }
 
 /*LAYOUT PRINCIPAL - INDEX*/
@@ -95,9 +126,10 @@ img {
 display: none;
 }
 
-#sidebar {
+aside {
     float: right;
-    width: 33%;
+    position: relative;
+    width: 300px;
 }
 #sidebar .widget {
     margin-bottom: 30px;
@@ -267,8 +299,26 @@ p label {
     padding: 5px 10px;
 }
 
+/*Estilizando o formulário de contato*/
+
+.custom_input {
+   width: 600px;
+   padding: 10px;
+}
+
 /*Classes e IDs de teste*/
 
 .resumo_do_artigo {
     font-size: 18px;
 }
+/*A classe single_page está sendo usada nas páginas e na 404*/
+.single_page {
+    width: 720px;
+}
+
+/*A classe dados_do_post estiliza a author, categoria e comentarios*/
+.dados_do_post {
+    font-weight: 900;
+
+}
+

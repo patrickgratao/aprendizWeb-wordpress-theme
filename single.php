@@ -8,7 +8,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="resumo_do_artigo"><?php the_excerpt(); ?></div>
          <hr>
-         <p class="autor">Publicado por <span><?php the_author_link(); ?> </span> em <?php the_date(); ?><span class="pull-right">//  <?php comments_number('0', '1', '%' );?> Comentários</span></p>
+         <p class="dados_do_post">Por <span><?php the_author_link(); ?> </span> - <?php the_date(); ?><span class="pull-right">//  <?php comments_number('0', '1', '%' );?> Comentários</span></p>
 
             <figure class="imagem_destacada">
                 <?php the_post_thumbnail() ?>
@@ -46,8 +46,7 @@
     </div>
     </div>
 
-    <!-- aqui vai o sidebar -->
-    <?php get_sidebar(); ?> <!-- inclui o codigo do arquivo sidebar.php -->
+
 
 </div> <!-- content -->
 

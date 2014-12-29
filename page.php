@@ -4,8 +4,9 @@ Template Name: Modelo Aprendiz Web
 */
 ?>
 <?php get_header(); ?>
-<div id="conteudo">
-    <div id="primary">
+<div id="conteudo_com_sidebar">
+    <?php get_sidebar(); ?> <!-- Chamada da Sidebar-->
+    <div class="single_page">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

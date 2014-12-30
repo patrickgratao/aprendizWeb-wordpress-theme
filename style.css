@@ -41,10 +41,15 @@ h4 {
     margin: 20px 0 10px;
 }
 
-p, ul, ol {
+p, ul, ol{
     font-size: 18px;
     line-height: 1.4;
     margin: 20px 0 15px;
+}
+
+li {
+    margin-left: 50px;
+    position: relative;
 }
 
 a {
@@ -351,4 +356,20 @@ p label {
         margin: 40px auto;
         position: relative;
 }
+
+/*Caixa de autor*/
+div.ts-fab-tab {
+    border-radius: 7px;
+}
+
+.ts-fab-avatar img {
+    margin-bottom: 3px;
+}
+
+.ts-fab-social-links a img {
+    margin: 7px;
+    border-radius: 90%;
+}
+
+
 

@@ -39,7 +39,7 @@ h4 {
     margin: 20px 0 10px;
 }
 
-p {
+p, ul, ol {
     font-size: 18px;
     line-height: 1.4;
     margin: 20px 0 15px;
@@ -60,13 +60,15 @@ a {
 
 }
 
+/*LOGOTIPO E PUBLICIDADE*/
+
 #logomarca img {
     width: 375px;
     height: 90px;
 }
 
 #logomarca h1 {
-    padding: 10px;
+    padding: 20px;
     margin: 0;
 }
 
@@ -130,6 +132,7 @@ aside {
     float: right;
     position: relative;
     width: 300px;
+    margin-left: 50px;
 }
 #sidebar .widget {
     margin-bottom: 30px;
@@ -318,6 +321,9 @@ p label {
    width: 600px;
    padding: 10px;
 }
+
+/*Estilo dos Plugins*/
+
 
 /*Classes e IDs de teste*/
 

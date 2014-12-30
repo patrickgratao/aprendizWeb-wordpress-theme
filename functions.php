@@ -19,17 +19,6 @@ register_sidebar(array(
 'after_title'   => "</h3>\n",
 ));
 
-// Registrando o sidebar2
-register_sidebar(array(
-'name'          => 'Sidebar do Rodapé',
-'id'            => 'sidebar_footer',
-'description'   => 'Sidebar do footer',
-'class'         => ' ',
-'before_widget' => '<div class="widget">',
-'after_widget'  => "</div>\n",
-'before_title'  => '<h3 class="widgettitle">',
-'after_title'   => "</h3>\n",
-));
 
 function copyright_date() {
 global $wpdb;
@@ -222,5 +211,69 @@ function wp_custom_breadcrumbs() {
 
   }
 } // end wp_custom_breadcrumbs()
+
+/*customização patryck */
+// Custom WordPress Login Logo
+
+function my_login_logo() {
+
+?>
+
+<style type="text/css">
+
+body.login div#login h1 a {
+
+background-image: url(aqui_vai_o_logo_do_site);
+
+width: 300px;
+
+-webkit-background-size: 300px 82px;
+
+background-size: 300px 82px;
+
+}
+
+body.login {
+    background-color: #00496c;
+    padding: 10px;
+}
+
+body.login form {
+    border-radius: 2%;
+    background-color: rgba(0,0,0, 0.5);
+}
+body.login form label {
+        color: white;
+}
+
+}
+
+</style>
+<?php }
+
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+//Fim do custom logo login
+
+
+//trocando Link na tela de login para a página inicial
+function my_login_logo_url() {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Blog Aprendiz Web - Área de Login';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+//Fim troca de link draco
+
+// Customizar o Footer do WordPress
+function remove_footer_admin () {
+    echo '© Esse tema foi customizado por <a href="http://patryck.com.br/" target="_blank">Patryck Gratão</a> especialmente para o blog Aprendiz Web';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+//fim da customização do rodape
 
 ?>

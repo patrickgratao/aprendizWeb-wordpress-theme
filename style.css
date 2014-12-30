@@ -123,6 +123,7 @@ img {
 #menu_principal li{
 display: inline-block;
 padding: 10px;
+margin: 0;
 }
 #menu_principal ul {
 text-align: center;
@@ -221,17 +222,31 @@ div.single {
 
 /*EFEITO SELECTION*/
 
+.single ::-moz-selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+
+.single ::selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+
 ::-moz-selection {
     background: #07C7DD;
     color: #fff;
     text-shadow: none;
 }
 
-::selection {
+:selection {
     background: #07C7DD;
     color: #fff;
     text-shadow: none;
 }
+
+/*Fim efeito Selection*/
 
 #pagina_simples p {
      margin-top: 20px;
@@ -323,7 +338,7 @@ p label {
     padding: 5px 10px;
 }
 .dtable h3 a {
-    margin-left: 50%;
+    margin-left: 46%;
 }
 /*Estilizando o formulário de contato*/
 

@@ -11,7 +11,7 @@
             </div><!-- .page-content -->
             <br>
 
-            <img src="http://localhost/site/wp-content/uploads/2014/12/404.jpg" title="Página não encontrada - Erro 404" alt="Imagem informando que a página que você procurou não foi encontrada">
+            <img src="<?php bloginfo('template_directory'); ?>/img/404.jpg" title="Página não encontrada - Erro 404" alt="Imagem informando que a página que você procurou não foi encontrada">
 
 
         </div><!-- #conteudo -->

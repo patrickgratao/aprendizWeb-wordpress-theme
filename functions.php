@@ -276,9 +276,11 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 
 //fim da customização do rodape
 
+//Menu
 require_once('wp_bootstrap_navwalker.php');
 register_nav_menus( array(
     'primary' => __( 'Main Menu', 'aprendizweb' ),
 ) );
+
 
 ?>

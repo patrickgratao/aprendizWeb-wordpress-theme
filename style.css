@@ -10,6 +10,8 @@ Author URI: http://www.patryck.com.br
 @import url('css/font-awesome.min.css');
 
 
+* {margin: 0;   padding: 0;}
+
 body {
     line-height: 1.6em;
     margin: 0;
@@ -50,12 +52,12 @@ a {
 }
 
 #conteudo {
-    width: 720px;
+    max-width: 720px;
     margin: 0 auto;
 }
 
 #conteudo_com_sidebar {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -112,14 +114,15 @@ img {
 
 /*MENU PRINCIPAL*/
 
+
 #menu_principal li{
-    display: inline-block;
-    padding: 10px;
+display: inline-block;
+padding: 10px;
+}
+#menu_principal ul {
+text-align: center;
 }
 
-#menu_principal ul {
-        text-align: center;
-}
 
 /*SIDEBAR*/
 
@@ -344,8 +347,8 @@ p label {
 }
 
 #crumbs {
-       width: 900px;
+        width: 90%;
         margin: 40px auto;
-
+        position: relative;
 }
 

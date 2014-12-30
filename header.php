@@ -14,9 +14,17 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title><?php  { wp_title( ' - ', true, 'right');  bloginfo('name'); echo " - "; bloginfo('description');  }  ?></title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/icons.css">
+    <!--  Bootstrap -->
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js">
+
+    <!-- CSS do Tema Aprendiz Web-->
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" >
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" />
+    <!-- Biblioteca Jquery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
@@ -42,36 +50,9 @@
                 </h1>
             </div>
 
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-                <div class="row">
-                <div class="col-md-12">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                </div>
-
-                <?php
-                            wp_nav_menu( array(
-                                'menu'              => 'primary',
-                                'theme_location'    => 'primary',
-                                'depth'             => 2,
-                                'container'         => 'div',
-                                'container_class'   => 'collapse navbar-collapse',
-                       'container_id'      => 'bs-example-navbar-collapse-1',
-                                'menu_class'        => 'nav navbar-nav',
-                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker'            => new wp_bootstrap_navwalker())
-                            );
-                        ?>
-                </div>
-                </div>
-                </div><!-- /.container-fluid -->
-              </nav>
+         <nav role="navigation" id="menu_principal">
+            <?php wp_nav_menu( $args ); ?>
+        </nav>
 
         <!-- Inserindo Breadcrumbs -->
         <section id="crumbs">

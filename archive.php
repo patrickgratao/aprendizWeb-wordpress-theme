@@ -26,7 +26,6 @@
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                  <p class="dados_do_post"> Por <?php the_author_posts_link(); ?> - <?php the_time('j \d\e F ') ?><span class="pull-right">//  <?php comments_popup_link();?></span></p>
                 <p><?php the_excerpt(); ?></p>
-                <a href="<?php the_permalink(); ?>">Continue lendo >></a>
             </div>
         </div>
 

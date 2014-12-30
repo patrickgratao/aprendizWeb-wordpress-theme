@@ -42,12 +42,38 @@
                 </h1>
             </div>
 
-            <!-- Início do menu principal -->
-            <nav role="navigation" id="menu_principal" >
-                <?php wp_nav_menu( $args ); ?>
-            </nav>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                </div>
 
+                <?php
+                            wp_nav_menu( array(
+                                'menu'              => 'primary',
+                                'theme_location'    => 'primary',
+                                'depth'             => 2,
+                                'container'         => 'div',
+                                'container_class'   => 'collapse navbar-collapse',
+                       'container_id'      => 'bs-example-navbar-collapse-1',
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())
+                            );
+                        ?>
+                </div>
+                </div>
+                </div><!-- /.container-fluid -->
+              </nav>
 
+        <!-- Inserindo Breadcrumbs -->
         <section id="crumbs">
                     <?php if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('<p id="breadcrumbs">','</p>');

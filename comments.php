@@ -9,8 +9,9 @@
 ?>
 <div id="comments">
     <header class="dtable">
-     <p><?php comments_number('0', '1', '%' );?> Comentários</p>
-        <h3 class="dtableCell">Deixe o seu comentário!</h3>
+        <h3 class="dtableCell">Deixe o seu comentário!
+        <?php comments_popup_link();?>
+        </h3>
     </header>
 
     <?php if ( have_comments() ) : ?>

@@ -314,7 +314,9 @@ p label {
     border: 1px solid #ddd;
     padding: 5px 10px;
 }
-
+.dtable h3 a {
+    margin-left: 50%;
+}
 /*Estilizando o formulário de contato*/
 
 .custom_input {

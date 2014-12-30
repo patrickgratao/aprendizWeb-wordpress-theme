@@ -8,7 +8,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="resumo_do_artigo"><?php the_excerpt(); ?></div>
          <hr>
-         <p class="dados_do_post">Por <span><?php the_author_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right">//  <?php comments_number('0', '1', '%' );?> Comentários</span></p>
+         <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right">// <?php comments_popup_link();?></span></p>
 
             <figure class="imagem_destacada">
                 <?php the_post_thumbnail() ?>

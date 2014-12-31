@@ -223,7 +223,7 @@ function my_login_logo() {
 
 body.login div#login h1 a {
 
-background-image: url(aqui_vai_o_logo_do_site);
+background-image: url(http://localhost/site/wp-content/themes/aprendizweb/img/logotipo-modelo.jpg);
 
 width: 300px;
 
@@ -234,16 +234,30 @@ background-size: 300px 82px;
 }
 
 body.login {
-    background-color: #00496c;
+    background-color: #f7f7f7;
     padding: 10px;
 }
 
 body.login form {
     border-radius: 2%;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0, 0.8);
 }
 body.login form label {
         color: white;
+}
+
+
+#nav a {color: #000 !important;}
+ #backtoblog a  {color: #000 !important;}
+
+input#wp-submit {
+  font-size: 16px;
+  background-color: transparent;
+  border: 1.34px solid #ffffff;
+  border-radius:  3px;
+  position: relative;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 }

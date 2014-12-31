@@ -1,6 +1,18 @@
 <?php get_header(); ?>
     <div id="conteudo">
         <div class="single">
+
+          <div class="autor_print">
+              <p>
+                <hr>
+                     - Nome do Artigo: <strong><?php the_title(); ?> </strong><br>
+                      - Autor: <strong><?php the_author_link(); ?></strong><br>
+                    - Data de Publicação: <strong><?php the_time('j \d\e F \d\e Y') ?></strong> <br>
+                    - Gostou desse artigo? Encontre mais em: <strong><?php bloginfo('name') ?> - (<?php echo get_site_url(); ?>)</strong> <br>
+                    </p>
+                    <hr>
+        </div>
+
          <h1>
             <?php the_title(); ?>
          </h1>
@@ -29,6 +41,17 @@
             <p>Lamentamos mas não foram encontrados artigos.</p>
 
         <?php endif; ?>
+
+ <div class="autor_print">
+              <p>
+                <hr>
+                     - Nome do Artigo: <strong><?php the_title(); ?> </strong><br>
+                      - Autor: <strong><?php the_author_link(); ?></strong><br>
+                    - Data de Publicação: <strong><?php the_time('j \d\e F \d\e Y') ?></strong> <br>
+                    - Gostou desse artigo? Encontre mais em: <strong><?php bloginfo('name') ?> - (<?php echo get_site_url(); ?>)</strong> <br>
+                    </p>
+                    <hr>
+        </div>
 
     </div>
     </div>

@@ -116,6 +116,9 @@ img {
     color: green ;
 }
 
+.autor_print {
+    display: none;
+}
 
 /*MENU PRINCIPAL*/
 
@@ -386,5 +389,31 @@ div.ts-fab-tab {
     border-radius: 90%;
 }
 
+/* Print Styles */
+@media print {
+
+    body { background:white; color:black; margin:0,  }
+
+    /*Ocultando links de compartilhamento*/
+    header, div.sharedaddy, .wp-pagenavi, aside, #respond  {display: none;}
+
+    div.ts-fab-wrapper  {display: none;}
+
+    /*Colocando todas as imagens em preto e branco*/
+    img {
+
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE6-9 */
+        image-rendering: auto;
+    }
+
+.autor_print, .dtable {
+    display: block;
+}
 
 
+}

@@ -2,7 +2,7 @@
 
 <div id="conteudo">
     <div id="primary">
-           <h3><span class="icon-star"></span> Todos os Artigos </h3>
+           <h3><i class="fa fa-calculator"></i> Todos os Artigos </h3>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -11,6 +11,8 @@
         <figure class="imagem_destacada">
             <?php the_post_thumbnail(); ?>
         </figure>
+
+
     </a>
     <div class="resumo">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

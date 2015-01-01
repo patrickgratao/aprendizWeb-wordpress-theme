@@ -1,5 +1,6 @@
 <?php get_header(); ?>
     <div id="conteudo">
+
         <div class="single">
 
           <div class="autor_print">

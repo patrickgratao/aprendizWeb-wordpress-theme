@@ -26,5 +26,6 @@ Template Name: Modelo Aprendiz Web
     </div>
 
 </div> <!-- content -->
+<div class="clear"></div>
 
 <?php get_footer(); ?> <!-- inclui o código do arquivo footer.php -->

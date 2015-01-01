@@ -23,15 +23,12 @@
          <hr>
          <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right">// <?php comments_popup_link();?></span></p>
 
-            <figure class="imagem_destacada">
+            <figure class="blog-artigo imagem_destacada"><!-- A classe blog-artigo foi adicionada para estilizar o media-print-->
                 <?php the_post_thumbnail() ?>
             </figure>
 
             <div id="conteudo_post">
                  <?php the_content(); ?>
-
-
-
             </div>
 
         <?php endwhile; ?>

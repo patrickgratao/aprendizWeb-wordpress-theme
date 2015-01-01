@@ -26,10 +26,12 @@
             <figure class="imagem_destacada">
                 <?php the_post_thumbnail() ?>
             </figure>
-             <figcaption>Isso é uma legenda</figcaption>
 
             <div id="conteudo_post">
                  <?php the_content(); ?>
+
+
+
             </div>
 
         <?php endwhile; ?>

@@ -484,12 +484,13 @@ input#searchsubmit {
    .menu-menu-principal-container > .menu > li > a  {
         padding: 20px;
         margin: 0 5px;
+        text-align: center;
         background: #000;
     }
 
     /* Configura o fundo do menu principal quando com mouse hover */
   .menu-menu-principal-container > .menu > li:hover a {
-        background: #444;
+        border-bottom: 1px solid white;
     }
     /*Hover do submenu*/
    .menu-menu-principal-container > .menu > li:hover > .sub-menu {
@@ -507,32 +508,45 @@ input#searchsubmit {
         position: absolute;
         top: 50px;
         left: 5px;
-        background: blue;
-        min-width: 200px;
+        min-width: 50px;
         z-index: 1000;
         display: none;
+        background-color: rgba(0,0,0, 0.9);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+
     }
 
     /*Configura o estilo do sub-sub-menu*/
        .menu-menu-principal-container> .menu > li > .sub-menu > li > .sub-menu {
         position: absolute;
         top: -20px;
-        left: 60px;
-        background: transparent;
-        min-width: 200px;
+        left: 100%;
+        min-width: 50px;
         z-index: 1000;
         display: none;
+        background-color: rgba(0,0,0, 0.7);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
     }
 
     /*Configura os links do submenu*/
 
     .menu-menu-principal-container > .menu > li > .sub-menu > li > a {
         padding: 10px 20px;
+        background-color: transparent;
+        border-bottom: 1px solid #f4f4f4;
+        margin-left: 10px;
     }
     /*Configura os links do sub-sub-menu*/
     .menu-menu-principal-container > .menu > li > .sub-menu > li > .sub-menu > li a {
         padding: 10px 20px;
-        background-color: red;
+        border-bottom: 1px solid #f4f4f4;
+        background-color: transparent;
     }
 
     /*Clearfix para o menu*/

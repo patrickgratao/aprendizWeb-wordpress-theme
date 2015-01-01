@@ -70,6 +70,7 @@ a {
 
 blockquote,q {
     quotes: none;
+    background-color: #f2f2f2 !important;
 }
 
 blockquote:before,blockquote:after,q:before,q:after {
@@ -78,12 +79,13 @@ blockquote:before,blockquote:after,q:before,q:after {
 }
 
 blockquote {
-    background: url(img/aspas.png) no-repeat #f5f5f5 20px 20px;
+    background: url(img/aspas.png) no-repeat #f4f4f4 20px 20px;
     min-height: 50px;
     padding: 40px 20px 20px 100px;
     margin-bottom: 20px;
     clear: both;
 }
+
 
 /*LOGOTIPO E PUBLICIDADE*/
 
@@ -450,15 +452,14 @@ input#searchsubmit {
         background: #000;
     }
 
+        /*Adicção extra do patryck, nao faz porra nenhuma*/
      .menu-menu-principal-container .menu, .menu-menu-principal-container li {
         margin-left: auto;
-
     }
 
     /*Remove as bolinhas do lado das listas*/
    .menu-menu-principal-container .menu, .menu-menu-principal-container .sub-menu {
         list-style: none;
-
     }
 
     /*Configura todos os links do nosso menu*/
@@ -474,10 +475,9 @@ input#searchsubmit {
 
     }
     /*Faz os <li>s ficarem na horizontal*/
-   .menu-menu-principal-container> .menu > li {
+   .menu-menu-principal-container > .menu > li {
         float: left;
         position: relative;
-
     }
 
     /*Configura os links do menu principal*/
@@ -491,8 +491,13 @@ input#searchsubmit {
   .menu-menu-principal-container > .menu > li:hover a {
         background: #444;
     }
-
+    /*Hover do submenu*/
    .menu-menu-principal-container > .menu > li:hover > .sub-menu {
+        display: block;
+    }
+
+     /*Hover do sub-sub-menu*/
+   .menu-menu-principal-container > .menu > li > .sub-menu > li:hover .sub-menu{
         display: block;
     }
 
@@ -502,6 +507,17 @@ input#searchsubmit {
         position: absolute;
         top: 50px;
         left: 5px;
+        background: blue;
+        min-width: 200px;
+        z-index: 1000;
+        display: none;
+    }
+
+    /*Configura o estilo do sub-sub-menu*/
+       .menu-menu-principal-container> .menu > li > .sub-menu > li > .sub-menu {
+        position: absolute;
+        top: -20px;
+        left: 60px;
         background: transparent;
         min-width: 200px;
         z-index: 1000;
@@ -511,7 +527,12 @@ input#searchsubmit {
     /*Configura os links do submenu*/
 
     .menu-menu-principal-container > .menu > li > .sub-menu > li > a {
-        padding: 10px 20px
+        padding: 10px 20px;
+    }
+    /*Configura os links do sub-sub-menu*/
+    .menu-menu-principal-container > .menu > li > .sub-menu > li > .sub-menu > li a {
+        padding: 10px 20px;
+        background-color: red;
     }
 
     /*Clearfix para o menu*/

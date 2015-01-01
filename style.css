@@ -70,7 +70,7 @@ a {
 
 blockquote,q {
     quotes: none;
-    background-color: #f2f2f2 !important;
+
 }
 
 blockquote:before,blockquote:after,q:before,q:after {
@@ -83,7 +83,7 @@ blockquote {
     min-height: 50px;
     padding: 40px 20px 20px 100px;
     margin-bottom: 20px;
-    clear: both;
+
 }
 
 
@@ -100,6 +100,21 @@ blockquote {
 }
 
 /*LAYOUT PRINCIPAL - INDEX*/
+
+/*Imagens*/
+
+.wp-caption-text {
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.wp-caption-text:before {
+
+    text-align: center;
+    content: '->  '
+}
+
 
 /*Início imagem em retina*/
 
@@ -514,8 +529,6 @@ input#searchsubmit {
         background-color: rgba(0,0,0, 0.9);
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-
-
     }
 
     /*Configura o estilo do sub-sub-menu*/

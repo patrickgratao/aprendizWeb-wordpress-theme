@@ -259,7 +259,7 @@ aside {
 
 /*Single Page*/
 
-div.single {
+article.single {
     max-width: 640px;
 }
 
@@ -307,7 +307,7 @@ div.single {
     text-shadow: none;
 }
 
-:selection {
+::selection {
     background: #07C7DD;
     color: #fff;
     text-shadow: none;

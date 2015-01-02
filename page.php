@@ -12,16 +12,16 @@ Template Name: Modelo Aprendiz Web
 
          <h1><?php the_title(); ?></h1>
 
-<div id="conteudo_post">
-        <?php the_content(); ?>
-</div>
+        <div id="conteudo_post">
+                <?php the_content(); ?>
+        </div>
 
-<?php endwhile; else: ?>
+        <?php endwhile; else: ?>
 
-<h2>Erro 404</h2>
-<p>Nada Encontrado</p>
+            <h2>Erro 404</h2>
+            <p>Nada Encontrado</p>
 
-<?php endif; ?>
+        <?php endif; ?>
 
     </div>
 

@@ -1,0 +1,19 @@
+/*Blockquotes*/
+
+blockquote,q {
+    quotes: none;
+
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none;
+}
+
+blockquote {
+    background: url(../img/aspas.png) no-repeat #f4f4f4 20px 20px;
+    min-height: 50px;
+    padding: 40px 20px 20px 100px;
+    margin-bottom: 20px;
+
+}

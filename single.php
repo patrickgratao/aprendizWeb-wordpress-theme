@@ -21,7 +21,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="resumo_do_artigo"><?php the_excerpt(); ?></div>
          <hr>
-         <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right">// <?php comments_popup_link();?></span></p>
+         <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right"><i class="fa fa-comment-o"></i>   <?php comments_popup_link();?></span></p>
 
             <figure class="blog-artigo imagem_destacada"><!-- A classe blog-artigo foi adicionada para estilizar o media-p-->
                 <?php the_post_thumbnail() ?>

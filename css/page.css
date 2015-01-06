@@ -1,0 +1,138 @@
+/*Nesse estilo estão presentes todos os estilos que se referem a
+* Páginas, single pages, blog, artigos
+*/
+
+#conteudo {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#conteudo_com_sidebar {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*Conserta o problema do footer com a sidebar*/
+.quebra_de_quadro {
+    clear: both;
+}
+
+.blog-artigo{
+    margin-bottom: 15px;
+    max-width: 640px;
+}
+.blog-artigo h2 {
+    font-size: 2.6em;
+}
+.nome_autor {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.resumo h2 a {
+    color: #2D2968;
+    padding: 10px 0px 0px;
+}
+.resumo h2 a:hover {
+    color: green ;
+}
+/*Escondendo os dados do autor*/
+.autor_print {
+    display: none;
+}
+/*Single Page*/
+
+article.single {
+    max-width: 640px;
+}
+.single h1 {
+    font-family: "AvenirLTStd-Black","trebuchet ms",helvetica,arial,sans-serif !important;
+    color: #2D2968;
+}
+#conteudo_post {
+    margin-top: 20px;
+    font-size: 16px;
+}
+/*Autor*/
+#autor h4{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#autor img {
+    border-radius: 100%;
+}
+#autor span {
+    color: #cc2222;
+}
+
+.resumo_do_artigo {
+    font-size: 18px;
+}
+/*A classe single_page está sendo usada nas páginas e na 404*/
+.single_page {
+    width: 720px;
+}
+
+/*A classe dados_do_post estiliza a author, categoria e comentarios*/
+.dados_do_post {
+    font-weight: 900;
+
+}
+/*Estilo da breadcrumbs*/
+#crumbs {
+        width: 90%;
+        margin: 40px auto;
+        position: relative;
+}
+
+/*EFEITO SELECTION*/
+
+.single ::-moz-selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+.single ::selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #07C7DD;
+    color: #fff;
+    text-shadow: none;
+}
+/*Fim efeito Selection*/
+
+#pagina_simples p {
+     margin-top: 20px;
+    font-size: 20px;
+}
+
+/*Estilizando o formulário de contato*/
+
+.custom_input {
+   width: 600px;
+   padding: 10px;
+}
+
+/*Inserindo underline nos links */
+div#conteudo_post  h1 a, div#conteudo_post h2 a, div#conteudo_post h3 a, div#conteudo_post h5 a, div#conteudo_post h6 a, div#conteudo_post p a {
+    text-decoration: underline !important;
+}
+/*Caixa de autor*/
+div.ts-fab-tab {
+    border-radius: 7px;
+}
+
+.ts-fab-avatar img {
+    margin-bottom: 3px;
+}
+
+.ts-fab-social-links a img {
+    margin: 7px;
+    border-radius: 90%;
+    }

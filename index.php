@@ -2,7 +2,7 @@
 
 <div id="conteudo">
     <div id="primary">
-           <h3><i class="fa fa-calculator"></i> Todos os Artigos </h3>
+           <h3>Todos os Artigos </h3>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -15,7 +15,7 @@
 
     <section class="resumo">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-         <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?></span> - <?php the_time('j \d\e F ') ?><span class="pull-right">//  <?php comments_popup_link();?></span></p>
+         <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?></span> - <?php the_time('j \d\e F ') ?><span class="pull-right"><i class="fa fa-comments-o"></i>  <?php comments_popup_link();?></span></p>
         <p><?php the_excerpt(); ?></p>
     </section>
 </article> <!-- Fim do blog-artigo -->

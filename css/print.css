@@ -1,0 +1,27 @@
+/* Print Styles */
+@media print {
+
+    body { background:white; color:black; margin:0,  }
+
+    /*Ocultando links de compartilhamento*/
+    header, div.sharedaddy, .wp-pagenavi, aside, #respond  {display: none;}
+
+    div.ts-fab-wrapper  {display: none;}
+
+    /*Colocando todas as imagens em preto e branco*/
+    img{
+        border-radius: 7px;
+        margin: 20px 0;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE6-9 */
+    }
+
+
+/*Inserindo dados do autor*/
+div.autor_print, div.dtable {
+    display: block;
+}
+
+}

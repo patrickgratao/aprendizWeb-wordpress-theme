@@ -1,0 +1,34 @@
+/*SIDEBAR*/
+
+/*Exclui o texto pesquisar por:*/
+#sidebar #searchform label {
+display: none;
+}
+
+aside {
+    float: right;
+    position: relative;
+    width: 300px;
+    margin-left: 50px;
+}
+#sidebar .widget {
+    margin-bottom: 30px;
+}
+#sidebar .widget h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#sidebar .widget ul {
+    padding-left: 20px;
+}
+#sidebar .widget li {
+    padding: 5px 5px 5px 0;
+    border-bottom: 1px dashed #ccc;
+    list-style: disc;
+}
+#sidebar .widget.newsletter {
+    padding: 11px;
+    background: #eee;
+    border: 1px solid #ddd;
+}

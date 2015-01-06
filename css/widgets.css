@@ -1,0 +1,22 @@
+/*Personalizando Widgets*/
+
+.searchform {
+    margin: 0 auto;
+}
+
+
+input#s {
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    max-width: 193px;
+}
+
+input#searchsubmit {
+    background-color: #006EEE;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 1px solid #006EEE;
+    padding: 8px;
+}

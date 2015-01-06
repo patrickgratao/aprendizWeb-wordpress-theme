@@ -1,0 +1,64 @@
+/*Nessa folha de estilo estão presentes os estilos de todas as imagens, efeitos
+* além das logomarcas.
+*/
+
+/*LOGOTIPO E PUBLICIDADE*/
+
+#logomarca img {
+    max-width: 375px;
+    height: 90px;
+}
+
+#logomarca h1 {
+    padding: 20px;
+    margin: 0;
+}
+
+/*LAYOUT PRINCIPAL - INDEX*/
+
+/*Imagens*/
+
+/*Subtitles in images*/
+.wp-caption-text {
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.wp-caption-text:before {
+    text-align: center;
+    content: '->  '
+}
+
+/*started zoom in image*/
+
+.imagem_destacada {
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.imagem_destacada  img {
+    max-width: 100%; /*640px*/
+    height: 300px;
+    /*O transform-duration faz o delay do zoom*/
+    -webkit-transition-duration: 1s, 5s, 230ms;
+    transition-duration: 1s, 5s, 230ms;
+
+}
+
+.imagem_destacada img:hover {
+        /*transform: scale(x), onde x é o tanto de zoom que você quer*/
+        -webkit-transform: scale(1.5);
+        /*transform-origin: ; serve para o posicionamento da imagem*/
+          webkit-transform-origin: 50% 50%;
+          -o-transform: scale(1.5);
+          -o-transform-origin: 50% 50% 0;
+          transform: scale(1.5);
+          transform-origin: 50% 50% 0;
+          /*O transform-duration faz o delay do zoom*/
+          -webkit-transition-duration: 1s, 5s, 230ms;
+          transition-duration: 1s, 5s, 230ms;
+}
+
+/*End zoom in image*/

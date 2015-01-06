@@ -9,7 +9,7 @@
 ?>
 <div id="comments">
     <header class="dtable">
-        <h3 class="dtableCell">Deixe o seu comentário!
+        <h3 class="dtableCell">Hora do comentário!
         <?php comments_popup_link();?>
         </h3>
     </header>
@@ -21,7 +21,7 @@
         </div>
         <br>
         <ol class="commentlist">
-            <?php wp_list_comments('avatar_size=64&type=comment&callback=mytheme_comment'); ?>
+            <?php wp_list_comments('avatar_size=64&type=comment&callback=aprendizweb_comment'); ?>
         </ol>
         <br>
         <div class="navigation">
@@ -41,7 +41,7 @@
                 <?php if ( $user_ID ) : ?>
 
                 <p>
-                    Autentificado como
+                    Você está logado como
                     <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>.
                     <a href="<?php echo wp_logout_url(); ?>" title="Sair desta conta">Sair desta conta &raquo;</a>
                 </p>
@@ -78,6 +78,7 @@
                 <?php do_action('comment_form', $post->ID); ?>
             </fieldset>
         </form>
+
 
      <p class="cancel"><?php cancel_comment_reply_link('Cancelar Resposta'); ?> </p>
     </div>

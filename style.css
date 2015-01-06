@@ -323,7 +323,10 @@ article.single {
 /*COMENTARIOS */
 
 #commentform {
-    max-width: 640px;
+}
+
+#respond {
+    margin-left: 30px;
 }
 
 .label_box{
@@ -383,12 +386,10 @@ margin: 0;
 }
 
 /*rever essa merda*/
-.commentlist {
-    max-width: 600px !important;
-}
 
-div.comment-body p {
-    width: 600px ;
+
+.comment-body p, .comment-body pre {
+    max-width: 720px ;
 }
 
 p label {

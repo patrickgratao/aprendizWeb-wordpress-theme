@@ -42,7 +42,7 @@ return $output;
 
 
 // FUNCAO PARA APRESENTACAO DOS COMENTARIOS
-function mytheme_comment($comment, $args, $depth) {
+function aprendizweb_comment($comment, $args, $depth) {
 $GLOBALS['comment'] = $comment;
 extract($args, EXTR_SKIP);
 
@@ -58,7 +58,7 @@ $add_below = 'div-comment';
 
 <!-- VERIFICA SE O COMENTARIO E REPLICA -->
 <<?php echo $tag; ?>
-<?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+<?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>"
 
 <!-- INICIO DO CORPO DO COMENTARIO -->
 <?php if ( 'div' != $args['style'] ) : ?>
@@ -287,12 +287,5 @@ function remove_footer_admin () {
 add_filter('admin_footer_text', 'remove_footer_admin');
 
 //fim da customização do rodape
-
-//Menu
-require_once('wp_bootstrap_navwalker.php');
-register_nav_menus( array(
-    'primary' => __( 'Main Menu', 'aprendizweb' ),
-) );
-
 
 ?>

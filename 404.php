@@ -8,16 +8,14 @@
             <div class="page-content">
                 <p><?php _e( 'Nós não conseguimos encontrar o que você queria. Tente fazer uma busca', 'meutema' ); ?></p>
                 <?php get_search_form(); ?>
-            </div><!-- .page-content -->
+
             <br>
 
-            <img src="<?php bloginfo('template_directory'); ?>/img/404.jpg" title="Página não encontrada - Erro 404" alt="Imagem informando que a página que você procurou não foi encontrada">
-
+            <img src="<?php bloginfo('template_directory'); ?>/img/404.jpg" title="Página não encontrada - Erro 404" alt="Imagem informando que a página que você procurou não foi encontrada" width="600px">
+            </div><!-- .page-content -->
 
         </div><!-- #conteudo -->
         </div>
-
-</div> <!-- content -->
 
 <div class="quebra_de_quadro"></div>
 

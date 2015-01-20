@@ -288,4 +288,18 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 
 //fim da customização do rodape
 
+
+add_action('admin_notices', 'meu_aviso');
+
+function meu_aviso() {
+  global $current_user ;
+  $user_id = $current_user->ID;
+  if ( ! get_user_meta($user_id, 'ignorar_aviso') ) {
+    echo '<div class="updated"><p>';
+    printf(__('<strong>ATENÇÃO: </strong> A partir de agora você pode fazer o upload de foto para o seu avatar. Basta clicar na aba Avatares. Mensagem de: <a href="http://patryck.com.br">Patryck Gratão</a>'));
+    echo '</p></div>';
+  }
+}
+
+
 ?>

@@ -62,3 +62,9 @@
 }
 
 /*End zoom in image*/
+
+/*Tratamento dos vídeos*/
+ iframe {
+    max-width: 100%;
+
+}

@@ -1,8 +1,16 @@
-Esse tema para wordpress foi desenvolvido por Patryck Gratão, para o site Aprendiz Web
+#  Site Aprendiz Web
 
-Site do Autor: http://patryck.com.br
+O Aprendiz Web foi um portal de ensino criado por três alunos de computação da UFG e aceitava postagens colaborativas.
 
-Blog Aprendiz Web: http://aprendizweb.com.br
+Este tema foi desenvolvido com HTML 5, CSS 3, Javascript e PHP para rodar na plataforma Wordpress.
 
---
-Sinta-se livre para brincar e modificar esse tema a vontade.
+### Fundadores do Aprendiz Web
+
+- Augusto Rodrigues
+- Dayan Costa
+- Patryck Gratão
+
+###Licença de Uso
+
+Este tema é open-source, ou seja, livre para uso, edição.
+

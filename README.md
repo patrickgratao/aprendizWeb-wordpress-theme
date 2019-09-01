@@ -10,7 +10,7 @@ Este tema foi desenvolvido com HTML 5, CSS 3, Javascript e PHP para rodar na pla
 - Dayan Costa
 - Patryck Gratão
 
-###Licença de Uso
+### Licença de Uso
 
 Este tema é open-source, ou seja, livre para uso, edição.
 

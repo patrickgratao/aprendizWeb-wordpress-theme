@@ -86,7 +86,7 @@ echo ' em ';
 
 <!-- VERIFICA SE O COMENTARIO AINDA NAO FOI APROVADO -->
 <?php if ( $comment->comment_approved == '0' ) : ?>
-<em class="comment-awaiting-moderation"><?php _e( 'Seu comentário ainda não foi aprovado.' ); ?></em>
+<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting approve.' ); ?></em>
 <br />
 <?php endif; ?>
 
@@ -108,7 +108,7 @@ function wp_custom_breadcrumbs() {
 
   $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
   $delimiter = '&raquo;'; // delimiter between crumbs
-  $home = 'Início'; // text for the 'Home' link
+  $home = 'Home'; // text for the 'Home' link
   $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
   $before = '<span class="current">'; // tag before the current crumb
   $after = '</span>'; // tag after the current crumb
@@ -122,15 +122,15 @@ function wp_custom_breadcrumbs() {
 
   } else {
 
-    echo '<section id="crumbs"> >> Você está em: <a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
+    echo '<section id="crumbs"> >> You are in: <a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
 
     if ( is_category() ) {
       $thisCat = get_category(get_query_var('cat'), false);
       if ($thisCat->parent != 0) echo get_category_parents($thisCat->parent, TRUE, ' ' . $delimiter . ' ');
-      echo $before . 'categoria "' . single_cat_title('', false) . '"' . $after;
+      echo $before . 'category "' . single_cat_title('', false) . '"' . $after;
 
     } elseif ( is_search() ) {
-      echo $before . 'Resultados da pesquisa por "' . get_search_query() . '"' . $after;
+      echo $before . 'Search results to "' . get_search_query() . '"' . $after;
 
     } elseif ( is_day() ) {
       echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
@@ -193,10 +193,10 @@ function wp_custom_breadcrumbs() {
     } elseif ( is_author() ) {
        global $author;
       $userdata = get_userdata($author);
-      echo $before . 'Artigos escritos por ' . $userdata->display_name . $after;
+      echo $before . 'Posts written by ' . $userdata->display_name . $after;
 
     } elseif ( is_404() ) {
-      echo $before . 'Página não encontrada - Erro 404' . $after;
+      echo $before . 'Not Found - 404' . $after;
     }
 
     if ( get_query_var('paged') ) {
@@ -282,7 +282,7 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 // Customizar o Footer do WordPress
 function remove_footer_admin () {
-    echo '© Esse tema foi customizado por <a href="http://patryck.com.br/" target="_blank">Patryck Gratão</a> especialmente para o blog Aprendiz Web';
+    echo '© Esse tema foi customizado por <a href="http://pgratao.com.br/" target="_blank">Patryck Gratão</a> especialmente para o blog Aprendiz Web';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 

@@ -1,16 +1,76 @@
-#  Site Aprendiz Web
+<h1 align="center">
+    <img alt="Wordpress Theme" src=".github/logo.jpg" width="400px" />
+</h1>
 
-O Aprendiz Web foi um portal de ensino criado por três alunos de computação da UFG e aceitava postagens colaborativas.
+<h2 align="center">
 
-Este tema foi desenvolvido com HTML 5, CSS 3, Javascript e PHP para rodar na plataforma Wordpress.
+  🚀 Aprendiz Web - Wordpress Theme
+</h2>
 
-### Fundadores do Aprendiz Web
+<p align="center">
+  <a href="#two_hearts-the-project">The Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#muscle-our-team">Our Team</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#key-how-to-use">How to Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#white_check_mark-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-- Augusto Rodrigues
-- Dayan Costa
-- Patryck Gratão
+<br>
 
-### Licença de Uso
+## :two_hearts: The Project
 
-Este tema é open-source, ou seja, livre para uso, edição.
+Aprediz Web was a tech blog where you could learn about programming, Best practices, UX Design and more about IT universe. 
 
+So we build this theme to use in our blog, at that moment this theme was really new because we use CSS transitions and another modern CSS3 resources and HTML5 properties.
+
+## :muscle: Our Team
+
+- Augusto Rodrigues,
+- [Dayan Costa](https://github.com/dayanfcosta)
+- [Patryck Gratão](https://github.com/patryckgratao)
+
+## :key: How to Use
+
+If you want use this wordpress theme in your blog or site you're free to do this.
+
+### **Requisites**:
+- [x] Have a wordpress instalation on your server.
+
+### **Steps**:
+
+#### Part 1 - Install the Theme
+
+1. Download this theme &#8594 [AprendizWeb.zip](https://github.com/patryckgratao/mykonos-hotel-management/archive/master.zip)
+2. Go to your dashboard on wordpress;
+3. Click in Appearance > Themes > Add New > Upload Theme
+4. Choose the archive you downloaded at the step 1;
+5. Click in Install Now.
+
+#### Part 2 - Activate the Theme
+
+1. Reload your Themes page;
+2. Hover to **Aprendiz Web Theme Blog**;
+3. Click in Activate.
+
+
+<div align="center">
+
+![Cheers](.github/cheers.gif)
+
+</div>
+
+## :rocket: Technologies
+
+To build this wordpress theme we use:
+
+- Backend → PHP
+- Frontend → HTML 5, CSS 3, JS and Bootstrap
+- Platform → Wordpress
+
+## :white_check_mark: License
+
+Distributed under an MIT license, free for use and editing.
+
+---
+
+Made with ❤️ by **Patryck Gratão, Dayan Costa and Augusto Rodrigues**

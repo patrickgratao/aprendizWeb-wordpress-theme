@@ -2,7 +2,7 @@
 
 <div id="conteudo">
     <div id="primary">
-           <h3>Todos os Artigos </h3>
+           <h3>All Posts</h3>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -27,13 +27,13 @@
 
 <?php else: ?>
 
-<h2>404 - Nenhum Artigo foi Encontrado</h2>
+<h2>404 - Nothing content has found.</h2>
      <div class="page-content">
-                <p><?php _e( 'Nós não conseguimos encontrar o que você queria. Tente fazer uma busca', 'meutema' ); ?></p>
+                <p><?php _e( "We couldn't find what you wanted. Try a search", 'meutema' ); ?></p>
                 <?php get_search_form(); ?>
             </div><!-- .page-content -->
     <br>
-    <img src="<?php bloginfo('template_directory'); ?>/img/404.jpg" title="Página não encontrada - Erro 404" alt="Imagem informando que a página que você procurou não foi encontrada">
+    <img src="<?php bloginfo('template_directory'); ?>/img/404.jpg" title="404" alt="404">
 
 
 <?php endif; ?>

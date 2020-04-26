@@ -3,16 +3,7 @@
 
         <article class="single">
 
-          <div class="autor_print">
-              <p>
-                <hr>
-                     - Nome do Artigo: <strong><?php the_title(); ?> </strong><br>
-                      - Autor: <strong><?php the_author_link(); ?></strong><br>
-                    - Data de Publicação: <strong><?php the_time('j \d\e F \d\e Y') ?></strong> <br>
-                    - Gostou desse artigo? Encontre mais em: <strong><?php bloginfo('name') ?> - (<?php echo get_site_url(); ?>)</strong> <br>
-                    </p>
-                    <hr>
-        </div>
+            
 
          <h1>
             <?php the_title(); ?>
@@ -21,7 +12,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="resumo_do_artigo"><?php the_excerpt(); ?></div>
          <hr>
-         <p class="dados_do_post">Por <span><?php the_author_posts_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right"><i class="fa fa-comment-o"></i>   <?php comments_popup_link();?></span></p>
+         <p class="dados_do_post">By <span><?php the_author_posts_link(); ?> </span> - <?php the_time('j \d\e F ') ?><span class="pull-right"><i class="fa fa-comment-o"></i>   <?php comments_popup_link();?></span></p>
 
             <figure class="blog-artigo imagem_destacada"><!-- A classe blog-artigo foi adicionada para estilizar o media-p-->
                 <?php the_post_thumbnail() ?>
@@ -37,22 +28,22 @@
 
         <?php else: ?>
 
-            <h2>Nada Encontrado</h2>
-            <p>Erro 404</p>
-            <p>Lamentamos mas não foram encontrados artigos.</p>
+            <h2>Not Found</h2>
+            <p>404</p>
+            <p>Sorry, no articles were found</p>
 
         <?php endif; ?>
 
- <div class="autor_print">
+        <div class="autor_print">
               <p>
                 <hr>
-                     - Nome do Artigo: <strong><?php the_title(); ?> </strong><br>
-                      - Autor: <strong><?php the_author_link(); ?></strong><br>
-                    - Data de Publicação: <strong><?php the_time('j \d\e F \d\e Y') ?></strong> <br>
-                    - Gostou desse artigo? Encontre mais em: <strong><?php bloginfo('name') ?> - (<?php echo get_site_url(); ?>)</strong> <br>
+                    - Article Name: <strong><?php the_title(); ?> </strong><br>
+                    - Author: <strong><?php the_author_link(); ?></strong><br>
+                    - Published at: <strong><?php the_time('j \d\e F \d\e Y') ?></strong> <br>
+                    - Do you like this content? Find more at: <strong><?php bloginfo('name') ?> - (<?php echo get_site_url(); ?>)</strong> <br>
                     </p>
                     <hr>
-        </div>
+            </div>
 
     </article>
     </div>

@@ -1,13 +1,13 @@
 /*
-Theme Name: Blog Aprendiz Web
+Theme Name: Aprendiz Web Theme Blog
 Theme URI: http://www.aprendizweb.com.br
-Description: Tema desenvolvido para o blog Aprendiz Web
-Author: Patryck Gratão
-Author URI: http://www.patryck.com.br
+Description: This theme was builded to Aprendiz Web a blog where you learn about IT, Programming and Clean Code Practicies.
+Author: Patryck Gratão, Dayan Costa, Augusto Rodrigues
+Author URI: https://github.com/patryckgratao
 */
 
 
-/*Importando folhas de estilo menores*/
+/*Import other stylesheeds*/
 @import url("css/dads.css");
 @import url("css/menu.css");
 @import url("css/comments.css");

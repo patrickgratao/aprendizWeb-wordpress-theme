@@ -9,7 +9,7 @@
     <?php if (is_tag()) {  single_tag_title(); } ?>
 
     <!-- Se a pagina se refere a um author -->
-    <?php if (is_author()) {  echo "Autor: ". get_the_author(); } ?>
+    <?php if (is_author()) {  echo "Author: ". get_the_author(); } ?>
 </h3>
 
     <hr>
@@ -24,7 +24,7 @@
     </a>
             <section class="resumo">
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                 <p class="dados_do_post"> Por <?php the_author_posts_link(); ?> - <?php the_time('j \d\e F ') ?><span class="pull-right">//  <?php comments_popup_link();?></span></p>
+                 <p class="dados_do_post"> By <?php the_author_posts_link(); ?> - <?php the_time('j \d\e F ') ?><span class="pull-right">//  <?php comments_popup_link();?></span></p>
                 <p><?php the_excerpt(); ?></p>
             </section>
 </article>
@@ -36,9 +36,9 @@
 
 <?php else: ?>
 
-<h2>Nada Encontrado</h2>
-    <p>Erro 404</p>
-    <p>Lamentamos mas não foram encontrados artigos.</p>
+<h2>Nothing Found</h2>
+    <p>404</p>
+    <p>Sorry, no found posts.</p>
 
 <?php endif; ?>
 

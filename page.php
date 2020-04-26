@@ -18,8 +18,8 @@ Template Name: Modelo Aprendiz Web
 
         <?php endwhile; else: ?>
 
-            <h2>Erro 404</h2>
-            <p>Nada Encontrado</p>
+            <h2>404</h2>
+            <p>Not Found</p>
 
         <?php endif; ?>
 

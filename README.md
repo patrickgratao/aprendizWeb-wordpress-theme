@@ -40,7 +40,7 @@ If you want use this wordpress theme in your blog or site you're free to do this
 
 #### Part 1 - Install the Theme
 
-1. Download this theme → [AprendizWeb.zip](https://github.com/patryckgratao/aprendizWeb-wordpress-theme.git)
+1. Download this theme → [AprendizWeb.zip](https://github.com/patryckgratao/aprendizWeb-wordpress-theme/archive/master.zip)
 2. Go to your dashboard on wordpress;
 3. Click in Appearance > Themes > Add New > Upload Theme
 4. Choose the archive you downloaded at the step 1;

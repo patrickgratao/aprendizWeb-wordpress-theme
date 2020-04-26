@@ -19,9 +19,9 @@
 
 ## :two_hearts: The Project
 
-Aprediz Web was a tech blog where you could learn about programming, Best practices, UX Design and more about IT universe. 
+**Aprediz Web** was a tech blog created by three UFG's computer students where you could learn about programming, best practices, UX Design and more about IT universe. 
 
-So we build this theme to use in our blog, at that moment this theme was really new because we use CSS transitions and another modern CSS3 resources and HTML5 properties.
+So we build this theme to use in our blog, at that moment this theme was really new because we use CSS transitions and another modern CSS3 and HTML5 resources.
 
 ## :muscle: Our Team
 
@@ -40,7 +40,7 @@ If you want use this wordpress theme in your blog or site you're free to do this
 
 #### Part 1 - Install the Theme
 
-1. Download this theme &#8594 [AprendizWeb.zip](https://github.com/patryckgratao/mykonos-hotel-management/archive/master.zip)
+1. Download this theme → [AprendizWeb.zip](https://github.com/patryckgratao/aprendizWeb-wordpress-theme.git)
 2. Go to your dashboard on wordpress;
 3. Click in Appearance > Themes > Add New > Upload Theme
 4. Choose the archive you downloaded at the step 1;
@@ -49,7 +49,7 @@ If you want use this wordpress theme in your blog or site you're free to do this
 #### Part 2 - Activate the Theme
 
 1. Reload your Themes page;
-2. Hover to **Aprendiz Web Theme Blog**;
+2. Hover in **Aprendiz Web Theme Blog**;
 3. Click in Activate.
 
 
@@ -66,6 +66,7 @@ To build this wordpress theme we use:
 - Backend → PHP
 - Frontend → HTML 5, CSS 3, JS and Bootstrap
 - Platform → Wordpress
+
 
 ## :white_check_mark: License
 
